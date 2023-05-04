@@ -1,0 +1,17 @@
+:root {
+  background-color: #FEF3EC;
+  --light-blue: #2FAFC8;
+  --dark-blue:#3E3D4E;
+  --blue-font: #3E416D;
+  --orange: #FCC7A8;
+  --gray-font: #AEADB4;
+  --gray-border:#979797;
+  --padding-x: 30px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
