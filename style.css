@@ -1,17 +1,135 @@
 :root {
-  background-color: #FEF3EC;
-  --light-blue: #2FAFC8;
-  --dark-blue:#3E3D4E;
-  --blue-font: #3E416D;
-  --orange: #FCC7A8;
-  --gray-font: #AEADB4;
-  --gray-border:#979797;
+  background-color: #fef3ec;
+  --light-blue: #2fafc8;
+  --dark-blue: #3e3d4e;
+  --blue-font: #3e416d;
+  --orange: #fcc7a8;
+  --gray-font: #aeadb4;
+  --gray-border: #979797;
   --padding-x: 30px;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-container {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1300px;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.tabs-wrapper {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-button {
+  background-color: #2fafc8;
+  border: none;
+  padding: 20px 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.grid-container {
+  margin: 30px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 1300px;
+}
+
+.header-booking {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-offers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.booking-card {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.booking-card-container {
+  grid-row: 2 / span 3;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px 30px;
+}
+
+.bookingcard-date {
+  border-right: 1px solid grey;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.img-container {
+  grid-row: 2 / span 3;
+  grid-column: 3 / span 1;
+}
+
+.img-container img {
+  max-width: 100%;
+  border-radius: 10px;
 }
